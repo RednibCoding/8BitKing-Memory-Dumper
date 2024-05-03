@@ -1,0 +1,589 @@
+
+Discarded input sections
+
+ .reginfo       0x0000000000000000       0x18 main.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 main.o
+ .reginfo       0x0000000000000000       0x18 patch_2023-8-7.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 patch_2023-8-7.o
+ .reginfo       0x0000000000000000       0x18 lib.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 lib.o
+ .reginfo       0x0000000000000000       0x18 tui.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 tui.o
+ .reginfo       0x0000000000000000       0x18 debug.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 debug.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x83130000
+START GROUP
+LOAD 2023-8-7.ld
+                0x00000000800655b4                strcat = 0x800655b4
+                0x0000000080065650                strncmp = 0x80065650
+                0x0000000080065728                strncpy = 0x80065728
+                0x00000000800657f8                strchr = 0x800657f8
+                0x0000000080065888                strrchr = 0x80065888
+                0x00000000800658a8                strstr = 0x800658a8
+                0x00000000800658fc                strcasecmp = 0x800658fc
+                0x000000008006597c                strncasecmp = 0x8006597c
+                0x00000000800659dc                memchr = 0x800659dc
+                0x0000000080065b58                tolower = 0x80065b58
+                0x0000000080065b78                toupper = 0x80065b78
+                0x0000000080065b98                isalnum = 0x80065b98
+                0x0000000080065bb0                isalpha = 0x80065bb0
+                0x0000000080065bc8                isascii = 0x80065bc8
+                0x0000000080065bd0                iscntrl = 0x80065bd0
+                0x0000000080065be8                isdigit = 0x80065be8
+                0x0000000080065c00                isgraph = 0x80065c00
+                0x0000000080065c18                islower = 0x80065c18
+                0x0000000080065c30                isprint = 0x80065c30
+                0x0000000080065c48                ispunct = 0x80065c48
+                0x0000000080065c60                isspace = 0x80065c60
+                0x0000000080065c78                isupper = 0x80065c78
+                0x0000000080065c90                isxdigit = 0x80065c90
+                0x0000000080065ca8                toascii = 0x80065ca8
+                0x0000000080065cb0                _tolower = 0x80065cb0
+                0x0000000080065cb8                _toupper = 0x80065cb8
+                0x0000000080065cf8                isnan = 0x80065cf8
+                0x0000000080065d44                isinf = 0x80065d44
+                0x0000000080065d94                strtol = 0x80065d94
+                0x0000000080065f84                strtoul = 0x80065f84
+                0x00000000800c0974                sbrk = 0x800c0974
+                0x00000000800c0c34                malloc = 0x800c0c34
+                0x00000000800c1844                free = 0x800c1844
+                0x00000000800c1908                realloc = 0x800c1908
+                0x00000000800c1bc0                calloc = 0x800c1bc0
+                0x00000000800c3654                vsnprintf = 0x800c3654
+                0x00000000800c3708                sprintf = 0x800c3708
+                0x00000000800c37b0                vprintf = 0x800c37b0
+                0x00000000800c37f0                printf = 0x800c37f0
+                0x00000000800c3818                snprintf = 0x800c3818
+                0x00000000800c3838                vsprintf = 0x800c3838
+                0x00000000800c38f8                memcpy = 0x800c38f8
+                0x00000000800c3b28                memset = 0x800c3b28
+                0x00000000800c3c08                memcmp = 0x800c3c08
+                0x00000000800c3c6c                memmove = 0x800c3c6c
+                0x00000000800c3d38                strcpy = 0x800c3d38
+                0x00000000800c3d78                strcmp = 0x800c3d78
+                0x00000000800c3dbc                strlen = 0x800c3dbc
+                0x00000000800c3de4                atoi = 0x800c3de4
+                0x00000000800e5e28                time = 0x800e5e28
+                0x00000000800e6070                localtime = 0x800e6070
+                0x00000000800e7444                vsscanf = 0x800e7444
+                0x00000000800e7484                sscanf = 0x800e7484
+                0x0000000080115ab0                open = 0x80115ab0
+                0x0000000080115ea8                read = 0x80115ea8
+                0x0000000080115fcc                write = 0x80115fcc
+                0x00000000801160ec                lseek = 0x801160ec
+                0x000000008011622c                close = 0x8011622c
+                0x0000000080115dd8                fs_fstat = 0x80115dd8
+                0x0000000080115dfc                fs_stat = 0x80115dfc
+                0x0000000080115c0c                fs_mkdir = 0x80115c0c
+                0x0000000080115b80                fs_opendir = 0x80115b80
+                0x0000000080116248                fs_closedir = 0x80116248
+                0x0000000080116190                fs_readdir = 0x80116190
+                0x0000000080115988                fs_sync = 0x80115988
+                0x000000008011cbf0                strdup = 0x8011cbf0
+                0x000000008011cd5c                fclose = 0x8011cd5c
+                0x000000008011cecc                fflush = 0x8011cecc
+                0x000000008011d0d0                fgets = 0x8011d0d0
+                0x000000008011d3e8                fopen = 0x8011d3e8
+                0x000000008011d5a4                fw_fread = 0x8011d5a4
+                0x000000008011d710                fseeko = 0x8011d710
+                0x000000008011de28                ftell = 0x8011de28
+                0x000000008011de44                ftello = 0x8011de44
+                0x000000008011e1b8                fwrite = 0x8011e1b8
+                0x0000000080005dcc                osal_tds2_cache_flush = 0x80005dcc
+                0x0000000080068df4                ali_chip_delay_ms = 0x80068df4
+                0x000000008014f8a0                os_disable_interrupt = 0x8014f8a0
+                0x000000008014f8c8                os_enable_interrupt = 0x8014f8c8
+                0x0000000080179634                dly_tsk = 0x80179634
+                0x0000000080179d1c                task_end = 0x80179d1c
+                0x000000008017a07c                os_get_tick_count = 0x8017a07c
+                0x00000000800c0688                dev_get_by_id = 0x800c0688
+                0x00000000800c5f10                osddrv_scale = 0x800c5f10
+                0x00000000801d0780                run_task = 0x801d0780
+                0x00000000801dfe88                joy_spi_out_pair = 0x801dfe88
+                0x00000000801dfd50                joy_spi_out_multi = 0x801dfd50
+                0x00000000801e08e0                retro_video_refresh_cb = 0x801e08e0
+                0x00000000801e0968                retro_audio_sample_batch_cb = 0x801e0968
+                0x00000000801e0b1c                retro_input_poll_cb = 0x801e0b1c
+                0x00000000801e0c0c                retro_input_state_cb = 0x801e0c0c
+                0x00000000801e0c50                retro_environment_cb = 0x801e0c50
+                0x00000000803a39ec                _ctype_ = 0x803a39ec
+                0x00000000803b00ac                s__s_Resources_Foldername_ini = 0x803b00ac
+                0x00000000803dbb94                RAMSIZE = 0x803dbb94
+                0x00000000803dc1c0                g_errno = 0x803dc1c0
+                0x00000000803de21c                g_joy_state = 0x803de21c
+                0x00000000803de260                gfn_retro_get_region = 0x803de260
+                0x00000000803de290                gfn_retro_load_game = 0x803de290
+                0x00000000803de298                gfn_retro_deinit = 0x803de298
+                0x00000000803de2a4                gfn_frameskip = 0x803de2a4
+                0x00000000803de2a8                gfn_retro_run = 0x803de2a8
+LOAD init.o
+LOAD main.o
+LOAD patch_2023-8-7.o
+LOAD lib.o
+LOAD tui.o
+LOAD debug.o
+END GROUP
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x00000000004000d4                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.MIPS.abiflags  0x00000000004000d8       0x18
+ *(.MIPS.abiflags)
+ .MIPS.abiflags
+                0x00000000004000d8       0x18 init.o
+
+.reginfo        0x00000000004000f0       0x18
+ *(.reginfo)
+ .reginfo       0x00000000004000f0       0x18 init.o
+
+.note.gnu.build-id
+                0x00000000004000f0       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00000000004000f0       0x24 init.o
+
+.dynamic
+ *(.dynamic)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000000400114        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.dyn)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rel_iplt_start = .)
+ *(.rel.iplt)
+                [!provide]                        PROVIDE (__rel_iplt_end = .)
+
+.rela.dyn       0x0000000000400114        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT_NONE(.init))
+
+.text           0x0000000083130000      0x7d0
+                0x0000000083130000                _ftext = .
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely
+                0x0000000083130000      0x200 init.o
+                0x0000000083130000                __start
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000083130200        0x0 init.o
+ .text          0x0000000083130200      0x274 main.o
+                0x0000000083130390                relocate
+ .text          0x0000000083130474       0x64 patch_2023-8-7.o
+                0x0000000083130474                debug_hooks
+                0x00000000831304c0                patch_music_rate
+ .text          0x00000000831304d8       0x5c lib.o
+                0x00000000831304d8                _flush_cache
+ .text          0x0000000083130534      0x200 tui.o
+                0x0000000083130534                gma_reg_set
+                0x0000000083130540                tui_open
+                0x0000000083130648                tui_add
+ .text          0x0000000083130734       0x9c debug.o
+                0x0000000083130734                die
+                0x000000008313077c                hook_assert
+                0x00000000831307a0                hook_except
+ *(.gnu.warning)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000831307d0      0x334
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00000000831307d0       0x2a main.o
+ *fill*         0x00000000831307fa        0x2 
+ .rodata        0x00000000831307fc       0x25 main.o
+ *fill*         0x0000000083130821        0x3 
+ .rodata        0x0000000083130824      0x2b8 tui.o
+ .rodata.str1.4
+                0x0000000083130adc       0x28 debug.o
+                                         0x27 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.plt
+ *(.plt)
+
+.iplt
+ *(.iplt)
+                0x0000000083130b24                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata          0x0000000083130b24        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000083130b24        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000083130b24        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000083130b24        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+                0x0000000083130b24                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got.plt
+ *(.got.plt)
+
+.data           0x0000000083130b24       0x2c
+                0x0000000083130b24                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000083130b24        0x0 init.o
+ .data          0x0000000083130b24        0x0 main.o
+ .data          0x0000000083130b24        0x0 patch_2023-8-7.o
+ .data          0x0000000083130b24        0x0 lib.o
+ .data          0x0000000083130b24       0x2c tui.o
+ .data          0x0000000083130b50        0x0 debug.o
+
+.data1
+ *(.data1)
+                0x0000000083130b50                . = .
+                0x0000000083138b40                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got
+ *(.got)
+
+.sdata
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+                0x0000000083130b50                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000083130b50                . = .
+                0x0000000083130b50                __bss_start = .
+                0x0000000083130b50                _fbss = .
+
+.sbss
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+
+.bss            0x0000000083130b60    0x1c474
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000083130b60        0x0 init.o
+ .bss           0x0000000083130b60        0x0 main.o
+ .bss           0x0000000083130b60        0x0 patch_2023-8-7.o
+ .bss           0x0000000083130b60        0x0 lib.o
+ .bss           0x0000000083130b60    0x1c474 tui.o
+ .bss           0x000000008314cfd4        0x0 debug.o
+ *(COMMON)
+                0x000000008314cfd4                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000008314cfd4                . = ALIGN (0x4)
+                0x000000008314cfd4                . = SEGMENT_START ("ldata-segment", .)
+                0x000000008314cfd4                . = ALIGN (0x4)
+                0x000000008314cfd4                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000008314cfd4                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 patch_2023-8-7.o
+ .comment       0x0000000000000011       0x12 lib.o
+ .comment       0x0000000000000011       0x12 tui.o
+ .comment       0x0000000000000011       0x12 debug.o
+
+.pdr            0x0000000000000000      0x160
+ .pdr           0x0000000000000000        0x0 init.o
+ .pdr           0x0000000000000000       0x40 main.o
+ .pdr           0x0000000000000040       0x40 patch_2023-8-7.o
+ .pdr           0x0000000000000080       0x20 lib.o
+ .pdr           0x00000000000000a0       0x60 tui.o
+ .pdr           0x0000000000000100       0x60 debug.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ *(.gnu.attributes)
+ .gnu.attributes
+                0x0000000000000000       0x10 init.o
+ .gnu.attributes
+                0x0000000000000010       0x10 main.o
+ .gnu.attributes
+                0x0000000000000020       0x10 patch_2023-8-7.o
+ .gnu.attributes
+                0x0000000000000030       0x10 lib.o
+ .gnu.attributes
+                0x0000000000000040       0x10 tui.o
+ .gnu.attributes
+                0x0000000000000050       0x10 debug.o
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ *(.mdebug.abi32)
+ .mdebug.abi32  0x0000000000000000        0x0 main.o
+ .mdebug.abi32  0x0000000000000000        0x0 patch_2023-8-7.o
+ .mdebug.abi32  0x0000000000000000        0x0 lib.o
+ .mdebug.abi32  0x0000000000000000        0x0 tui.o
+ .mdebug.abi32  0x0000000000000000        0x0 debug.o
+
+.mdebug.abiN32
+ *(.mdebug.abiN32)
+
+.mdebug.abi64
+ *(.mdebug.abi64)
+
+.mdebug.abiO64
+ *(.mdebug.abiO64)
+
+.mdebug.eabi32
+ *(.mdebug.eabi32)
+
+.mdebug.eabi64
+ *(.mdebug.eabi64)
+
+.gcc_compiled_long32
+ *(.gcc_compiled_long32)
+
+.gcc_compiled_long64
+ *(.gcc_compiled_long64)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(../Resources/Foldername.out elf32-tradlittlemips)
