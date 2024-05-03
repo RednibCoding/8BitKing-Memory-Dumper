@@ -23,3 +23,7 @@ The toolchain has been reported to work in WSL2, too, so you don't really have t
 
 ## Files
 Everything for the dumpers code is in `main.c`, it's quite simple really. Other source files are supplementary.
+
+The RTOS on this device does not support apps or libraries in any way and was designed as one huge statically linked image.
+
+So `Foldername.ini` is quite the same, just relocated out of reach
