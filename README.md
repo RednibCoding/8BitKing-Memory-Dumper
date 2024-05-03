@@ -26,4 +26,30 @@ Everything for the dumpers code is in `main.c`, it's quite simple really. Other 
 
 The RTOS on this device does not support apps or libraries in any way and was designed as one huge statically linked image.
 
-So `Foldername.ini` is quite the same, just relocated out of reach
+So `Foldername.ini` is quite the same, just relocated out of reach.
+
+New `Foldername.ini` is, obviously, the executable body. It's relocated to the top of the memory in relocate function in `main.c` then main_task is run.
+
+## The 8BitKing game stick
+8BitKing is powered by HiChip Semi (HCSEMI) A210C https://en.hichiptech.com/product_1/19.html ([Datasheet](readme/HCSEMI_A210CBriefDatasheet200618.pdf))
+
+| Feature         | Details                                     |
+|-----------------|---------------------------------------------|
+| CPU             | 800MHz                                      |
+| DRAM            | ext. max. 256MB @800Mbps                    |
+| Flash           | SPI Flash                                   |
+| Video Decoder   | Multi-format @FHD 60FPS                     |
+| Display         | HDMI_TX+VGA/CVBS                            |
+| Video Input     | DVP/CCIR601/656                             |
+| Audio           | Mono ADAC+I2S in+out/SPDIF out              |
+| USB             | USB2.0x2                                    |
+| SDIO            | SDIO2.0                                     |
+| I2C/UART        | 3xPWM, 3xI2C+2xUart, 1xSARADC, IRRX         |
+| Wi-Fi           | A210 Support                                |
+| SW System       | RTOS                                        |
+| Package         | eLQFP128                                    |
+| Typical Products| Mobile screen sharing device, Same-screen mods, Game |
+
+
+The main CPU is MIPS32-compatible (Release 1 only) running at 810 MHz, but it's bottlenecked heavily by the DDR2 due to lack of sensible caching (16K for instructions and 16K data, no L2 at all).
+This CPU lacks an MMU, and is also bug-ridden, freezing on invalid memory accesses.
