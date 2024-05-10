@@ -53,3 +53,10 @@ New `Foldername.ini` is, obviously, the executable body. It's relocated to the t
 
 The main CPU is MIPS32-compatible (Release 1 only) running at 810 MHz, but it's bottlenecked heavily by the DDR2 due to lack of sensible caching (16K for instructions and 16K data, no L2 at all).
 This CPU lacks an MMU, and is also bug-ridden, freezing on invalid memory accesses.
+
+## Famicom only Derivat (Y2S HD(1661 Games)) (D600)
+There is a similar stick which has no specific name. It only has a famicom/nes emulator and the main menu has menu points for different categories: e.g. adventure, puzzle, etc.
+
+For this you can use the resource folder inside the `FCOnlyStick` directory.
+
+The 8BitKing and this Y2S Stick have the same PCB and CPU chip.
